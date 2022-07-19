@@ -8,8 +8,8 @@ services:
       - 8000:8000
     depends_on:
       - admin_db
-    # volumes:
-    #   - .:/app
+    volumes:
+      - .:/app
 
   admin_db:
     image: mysql:5.7.22

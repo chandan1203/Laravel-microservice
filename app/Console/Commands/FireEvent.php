@@ -8,7 +8,7 @@ use Illuminate\Console\Command;
 class FireEvent extends Command
 {
 
-    protected $signature = 'fire';
+    protected $signature ='fire';
 
     public function handle()
     {

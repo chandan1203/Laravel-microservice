@@ -20,14 +20,9 @@ class TestJob implements ShouldQueue
      */
     public function __construct()
     {
-        //
+
     }
 
-    /**
-     * Execute the job.
-     *
-     * @return void
-     */
     public function handle()
     {
         //
