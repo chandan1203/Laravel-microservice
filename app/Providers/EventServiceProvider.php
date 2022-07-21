@@ -20,21 +20,13 @@ class EventServiceProvider extends ServiceProvider
         ],
     ];
 
-    /**
-     * Register any events for your application.
-     *
-     * @return void
-     */
     public function boot()
     {
-        //
+        \App::bindMethod(ProductLiked::class . '@handle', function($job){
+            return $job->handle();
+        });
     }
 
-    /**
-     * Determine if events and listeners should be automatically discovered.
-     *
-     * @return bool
-     */
     public function shouldDiscoverEvents()
     {
         return false;
